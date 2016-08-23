@@ -42,7 +42,7 @@
   $header .= "MIME-Version: 1.0\r\n";
   $header .= "Content-Type: multipart/mixed; boundary=\"".$uid."\"\r\n\r\n";
 
-  $message = "Это сообщение было добавлено: " . date('m-d-Y') ."\n". $name ."\n". $phone ."\n". $email ."\n". $comment ."\n". "\n\n\nТехническая информация:\n IP посетителя: " . $from_ip . "\n Браузер посетителя: " . $from_browser;
+  $message = "Это сообщение было добавлено: " . date('m-d-Y') ."<br>\n". $name ."<br>\n". $phone ."<br>\n". $email ."<br>\n". $comment ."<br>\n". "<br><br><br>\n\n\nТехническая информация:<br>\n IP посетителя: " . $from_ip . "<br>\n Браузер посетителя: " . $from_browser;
 
   $send_subject .= " - {$userName}";
 

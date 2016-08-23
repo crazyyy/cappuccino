@@ -28,6 +28,8 @@
 
   $mail = new PHPMailer();
 
+  $mail->CharSet = 'UTF-8';
+
   //Set who the message is to be sent from
   $mail->setFrom('il.belkin@yandex.ru', 'Заявка с лендинга');
   //Set an alternative reply-to address
@@ -40,7 +42,7 @@
     $mail->AddAttachment($_FILES['clientfile']['tmp_name'],$_FILES['clientfile']['name']);
   }
 
-  $mail->msgHTML($name ."\n". $userPhone ."\n". $userMessage ."\n". "\n\n\nТехническая информация:\n IP посетителя: " . $from_ip . "\n Браузер посетителя: " . $from_browser);
+  $mail->msgHTML($name ."<br>\n". $userPhone ."<br>\n". $userMessage ."<br>\n". "<br><br><br>\n\n\nТехническая информация:<br>\n IP посетителя: " . $from_ip . "<br>\n Браузер посетителя: " . $from_browser);
 
   $mail->IsHTML(true);
 
