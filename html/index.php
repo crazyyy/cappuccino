@@ -770,7 +770,7 @@
 
       <div class="small-8 small-centered medium-9 large-9 column form-grey">
         <br>
-        <form class="request-with-file" method="post" data-abide="" enctype="multipart/form-data" novalidate="novalidate">
+        <form class="request-with-file" data-abide="ajax" novalidate="novalidate">
           <input type="hidden" name="block-name" value=" Хотите узнать цену вашей кухни?">
           <div class="row">
             <div class="small-12 large-4 column">

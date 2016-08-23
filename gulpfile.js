@@ -3,7 +3,7 @@ var htmlOWp = true,
   // set wordpress template folder
   wpThemeName = 'wp-framework',
   // and set wordpress domain
-  wpDomain = 'wp-framework.dev';
+  wpDomain = 'cappuccino.dev';
 
 
 if (htmlOWp === true) {
@@ -203,22 +203,14 @@ gulp.task('cache:clear', function(done) {
 
 // Browser Sync
 gulp.task('browserSync', function() {
-  if (htmlOWp === true) {
-    browserSync({
-      notify: false,
-      port: 9080,
-      server: {
-        baseDir: basePaths.dest,
-      }
-    });
-  } else {
-    browserSync({
-      notify: false,
-      proxy: wpDomain,
-      host: wpDomain,
-      port: 9090
-    });
-  }
+
+  browserSync({
+    notify: false,
+    proxy: wpDomain,
+    host: wpDomain,
+    port: 9090
+  });
+
 });
 
 gulp.task('styles', function(callback) {
