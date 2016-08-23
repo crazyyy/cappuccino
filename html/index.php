@@ -1909,8 +1909,65 @@
   </div>
 
   <script src="js/app.min.js"></script>
-  <div style="display:none">
+
+  <div id="galley_item_details" class="reveal-modal open" data-reveal="" data-options="animation: fade">
+    <a class="close-reveal-modal">×</a>
+    <div class="preloader">
+      <h3 class="preloader-text">
+        <img src="http://a.cappuccino.in.ua/wp-content/themes/cappuccino/img/loading.gif">
+      </h3>
+    </div>
+    <div class="">
+      <div class="gallery-container">
+        <div class="small-12 medium-12 large-10 column">
+          <div class="gallery-full">
+            <a href="#" data-next-img-number="1">
+              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-1024x682.jpg">
+            </a>
+          </div>
+        </div>
+
+        <div class="large-2 show-for-large-up column" style="padding-left: 0;">
+          <div class="gallery-thumbs large">
+            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-1024x682.jpg" data-img-number="0" class="active">
+              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-150x150.jpg">
+            </a>
+            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-1024x682.jpg" data-img-number="1" class="">
+              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-150x150.jpg">
+            </a>
+            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-1024x682.jpg" data-img-number="2" class="">
+              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-150x150.jpg">
+            </a>
+          </div>
+        </div>
+
+        <div class="small-12 medium-12 hide-for-large-up column">
+          <div class="gallery-thumbs small">
+            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-1024x682.jpg" data-img-number="0" class="active">
+              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-150x150.jpg">
+            </a>
+            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-1024x682.jpg" data-img-number="1" class="">
+              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-150x150.jpg">
+            </a>
+            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-1024x682.jpg" data-img-number="2" class="">
+              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-150x150.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-and-meta">
+      <div class="full-description">
+        <p>&nbsp;</p>
+      </div>
+      <div class="meta">
+        <a href="#" class="button btn-orange show-for-medium-up" data-reveal-id="request-modal" data-block-name="Наши новые работы | Кухня 72">ХОЧУ ПОХОЖУЮ КУХНЮ</a>
+        <a href="#" class="hide-for-medium-up" data-reveal-id="request-modal" data-block-name="Наши новые работы | Кухня 72">ХОЧУ ПОХОЖУЮ КУХНЮ</a>
+        <p>1080 $/метр</p>
+      </div>
+    </div>
   </div>
+
 
 </body>
 
