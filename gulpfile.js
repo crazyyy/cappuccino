@@ -1,10 +1,13 @@
 /* if work with html set TRUE, else - FALSE */
-var htmlOWp = true,
+var htmlOWp = false,
   // set wordpress template folder
-  wpThemeName = 'wp-framework',
+  wpThemeName = 'wp-cappuccino',
   // and set wordpress domain
   wpDomain = 'cappuccino.dev';
 
+var AUTOPREFIXER_BROWSERS = [
+  'ie >= 8', 'ie_mob >= 10', 'ff >= 20', 'chrome >= 24', 'safari >= 5', 'opera >= 12', 'ios >= 7', 'android >= 2.3', '> 1%', 'last 4 versions', 'bb >= 10'
+];
 
 if (htmlOWp === true) {
   var basePaths = {
@@ -203,14 +206,22 @@ gulp.task('cache:clear', function(done) {
 
 // Browser Sync
 gulp.task('browserSync', function() {
-
-  browserSync({
-    notify: false,
-    proxy: wpDomain,
-    host: wpDomain,
-    port: 9090
-  });
-
+  if (htmlOWp === true) {
+    browserSync({
+      notify: false,
+      port: 9080,
+      server: {
+        baseDir: basePaths.dest,
+      }
+    });
+  } else {
+    browserSync({
+      notify: false,
+      proxy: wpDomain,
+      host: wpDomain,
+      port: 9090
+    });
+  }
 });
 
 gulp.task('styles', function(callback) {
