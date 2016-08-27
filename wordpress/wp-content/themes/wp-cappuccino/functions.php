@@ -653,9 +653,46 @@ function disable_emojicons_tinymce( $plugins ) {
   }
 }
 
+// Add Autoren Post Type
+add_action( 'init', 'post_type_works' );
+function post_type_works() {
 
+  $labels = array(
+    'name' => 'Works',
+    'singular_name' => 'Works',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent'
+  );
 
+  $args = array(
+    'description' => 'Works Post Type',
+    'show_ui' => true,
+    'menu_position' => 3,
+    'exclude_from_search' => false,
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'works' ),
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-admin-home',
+    'show_in_rest' => true
+  );
 
+  register_post_type( 'works' , $args );
+}
 
 
 
