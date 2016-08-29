@@ -223,7 +223,9 @@
       </div>
     </div>
 
-    <?php get_template_part('loop-works'); ?>
+    <div class="row works-gallery" id="MixItUp26116C">
+      <?php get_template_part('loop-works'); ?>
+    </div>
 
     <div class="row">
       <div class="small-12 text-center column">
@@ -251,8 +253,7 @@
       </div>
     </div> */ ?>
 
-    <div id="galley_item_details" class="reveal-modal" data-reveal="" data-options="animation: fade">
-    </div>
+
   </div>
   <div id="achievements-1" data-magellan-destination="achievements-1" class="noise" style="background-color: #f5f5f5;">
     <div class="row">
@@ -370,7 +371,7 @@
 
     <div class="row">
       <div class="small-12 large-6 column video-full">
-        <div class="video-large pretty-embed" data-pe-videoid="c0aUC_6WoNs" data-pe-fitvids="true" data-pe-preview-size="high"><img src="<?php echo get_template_directory_uri(); ?>/img/hqdefault.jpg" width="100%" alt="YouTube Video Preview"></div>
+        <div class="video-large pretty-embed" data-pe-videoid="wQ6iGqtmkkk" data-pe-fitvids="true" data-pe-preview-size="high"><img src="<?php echo get_template_directory_uri(); ?>/img/hqdefault.jpg" width="100%" alt="YouTube Video Preview"></div>
       </div>
       <div class="small-12 large-6 column feedback-content">
         <div class="feedback-text">
@@ -1464,73 +1465,17 @@
     <a class="close-reveal-modal">×</a>
   </div>
 
-
-  <div id="galley_item_details" class="reveal-modal open" data-reveal="" data-options="animation: fade">
-    <a class="close-reveal-modal">×</a>
-    <div class="preloader">
-      <h3 class="preloader-text">
-        <img src="http://a.cappuccino.in.ua/wp-content/themes/cappuccino/img/loading.gif">
-      </h3>
-    </div>
-    <div class="">
-      <div class="gallery-container">
-        <div class="small-12 medium-12 large-10 column">
-          <div class="gallery-full">
-            <a href="#" data-next-img-number="1">
-              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-1024x682.jpg">
-            </a>
-          </div>
-        </div>
-
-        <div class="large-2 show-for-large-up column" style="padding-left: 0;">
-          <div class="gallery-thumbs large">
-            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-1024x682.jpg" data-img-number="0" class="active">
-              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-150x150.jpg">
-            </a>
-            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-1024x682.jpg" data-img-number="1" class="">
-              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-150x150.jpg">
-            </a>
-            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-1024x682.jpg" data-img-number="2" class="">
-              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-150x150.jpg">
-            </a>
-          </div>
-        </div>
-
-        <div class="small-12 medium-12 hide-for-large-up column">
-          <div class="gallery-thumbs small">
-            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-1024x682.jpg" data-img-number="0" class="active">
-              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-1-150x150.jpg">
-            </a>
-            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-1024x682.jpg" data-img-number="1" class="">
-              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-2-150x150.jpg">
-            </a>
-            <a href="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-1024x682.jpg" data-img-number="2" class="">
-              <img src="http://a.cappuccino.in.ua/wp-content/uploads/2016/01/Заказ№193-3-150x150.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-and-meta">
-      <div class="full-description">
-        <p>&nbsp;</p>
-      </div>
-      <div class="meta">
-        <a href="#" class="button btn-orange show-for-medium-up" data-reveal-id="request-modal" data-block-name="Наши новые работы | Кухня 72">ХОЧУ ПОХОЖУЮ КУХНЮ</a>
-        <a href="#" class="hide-for-medium-up" data-reveal-id="request-modal" data-block-name="Наши новые работы | Кухня 72">ХОЧУ ПОХОЖУЮ КУХНЮ</a>
-        <p>1080 $/метр</p>
-      </div>
-    </div>
+  <div class="reveal-modal-bg"></div>
+  <div id="galley_item_details" class="reveal-modal">
+    <?php get_template_part('works-modal'); ?>
   </div>
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/app.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 </body>
 
 </html>
-
-
-16.2
