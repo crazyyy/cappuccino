@@ -6,16 +6,16 @@
         <a href="/" class="logo-text">Cappuccino</a>
         <a href="/" class="logo-description">Студия кухонь в Одессе</a>
       </li>
-      <li class="active" data-magellan-arrival="design">
+      <li class="active">
         <a href="#design">3d-дизайн</a>
       </li>
-      <li data-magellan-arrival="our-works">
+      <li>
         <a href="#works">Наши работы</a>
       </li>
-      <li data-magellan-arrival="achievements-2">
+      <li>
         <a href="#achievements-2">Цены</a>
       </li>
-      <li data-magellan-arrival="customers-feedback">
+      <li>
         <a href="#customers-feedback">Отзывы</a>
       </li>
       <li data-magellan-arrival="contacts">
@@ -62,33 +62,15 @@
               </div>
               <br>
               <br>
+
               <div class="small-8 medium-7 large-9 column small-centered form-yellow show-for-medium-up">
-                <form class="sendform" data-abide="ajax" novalidate="novalidate">
-                  <div class="row">
-                    <div class="small-12 small-centered column text-center">
-                      <span class="h1"><span style="color: #000000;"><strong>ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ РАЗРАБОТКУ 3D-ДИЗАЙНА ВАШЕЙ КУХНИ&nbsp;БЕСПЛАТНО!</strong></span></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="small-12 large-6 column">
-                      <input type="text" name="name" placeholder="Укажите Ваше имя" required="">
-                    </div>
-                    <div class="small-12 large-6 column">
-                      <input type="tel" name="phone" placeholder="Укажите номер телефона" required="">
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="small-12 small-centered column text-center">
-                      <button type="submit" class="button btn-orange">ОСТАВИТЬ ЗАЯВКУ</button>
-                    </div>
-                  </div>
-                </form>
+                <?php echo do_shortcode('[contact-form-7 id="29" title="Leave Form"]'); ?>
               </div>
             </div>
           </div>
         </li>
       </ul>
     </div>
-
 
     <div id="slider-mobile" class="hide-for-medium-up">
       <img width="1920" height="1080" src="<?php echo get_template_directory_uri(); ?>/img/slaider-1920-1080.jpg" class="attachment-full wp-post-image" alt="slaider 1920 1080">
@@ -105,26 +87,7 @@
     <div class="top-form hide-for-medium-up">
       <div class="row">
         <div class="small-8 small-centered medium-7 large-9 column form-yellow">
-          <form class="sendform" data-abide="ajax" novalidate="novalidate">
-            <div class="row">
-              <div class="small-12 small-centered column">
-                <span class="h1"><strong>ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ РАЗРАБОТКУ 3D-ДИЗАЙНА ВАШЕЙ КУХНИ <span style="text-decoration: underline;">БЕСПЛАТНО!</span></strong>
-                </span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="small-12 large-6 column">
-                <input type="text" name="name" placeholder="Укажите Ваше имя" required="">
-              </div>
-              <div class="small-12 large-6 column">
-                <input type="tel" name="phone" placeholder="Укажите номер телефона" required="">
-              </div>
-              <div class="clearfix"></div>
-              <div class="small-12 small-centered column">
-                <button type="submit" class="button btn-orange">ОСТАВИТЬ ЗАЯВКУ</button>
-              </div>
-            </div>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="29" title="Leave Form"]'); ?>
         </div>
       </div>
     </div>
@@ -327,29 +290,9 @@
 
       <div class="small-8 small-centered medium-9 large-9 column form-grey">
         <br>
-        <form class="request-with-file" data-abide="ajax" novalidate="novalidate">
-          <input type="hidden" name="block-name" value=" Хотите узнать цену вашей кухни?">
-          <div class="row">
-            <div class="small-12 large-4 column">
-              <input type="text" name="clientname" required="" placeholder="Укажите Ваше имя">
-            </div>
-            <div class="small-12 large-4 column">
-              <input type="tel" name="clientphone" required="" placeholder="Укажите номер телефона">
-            </div>
-            <div class="small-12 large-4 column">
-              <div class="input-file"><span class="input-text">ПРИКРЕПИТЬ ФАЙЛ</span>
-                <input type="file" name="clientfile">
-              </div>
-            </div>
-            <div class="small-12 column">
-              <textarea name="clientcomments" cols="30" rows="5" placeholder="Комментарии"></textarea>
-            </div>
-            <div class="clearfix"></div>
-            <div class="small-12 small-centered text-center column">
-              <button type="submit" href="#" class="button btn-orange">УЗНАТЬ ЦЕНУ</button>
-            </div>
-          </div>
-        </form>
+
+<?php echo do_shortcode('[contact-form-7 id="77" title="FileUploads"]'); ?>
+
       </div>
       <br>
       <br>

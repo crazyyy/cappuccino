@@ -91,3 +91,12 @@ function CloseModal(event) {
   $('.reveal-modal-bg').fadeOut('fast');
   $('#galley_item_details').removeClass('open');
 }
+
+/*
+// header nav add slow slide attr
+$('.sub-nav li').each(function(index, el) {
+  var thisAttr = $(this).children('a').attr('href');
+  var thisAttr = thisAttr.replace("#", "");
+  $(this).attr('data-magellan-arrival', thisAttr)
+});
+*/
