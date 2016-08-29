@@ -8,6 +8,7 @@
         <div class="small-12 medium-12 large-10 column">
             <div class="gallery-full">
                 <a href="#" data-next-img-number="1">
+                  <img src="" width="600" height="400" />
                 </a>
             </div>
         </div>

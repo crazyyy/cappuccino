@@ -371,7 +371,7 @@
 
     <div class="row">
       <div class="small-12 large-6 column video-full">
-        <div class="video-large pretty-embed" data-pe-videoid="wQ6iGqtmkkk" data-pe-fitvids="true" data-pe-preview-size="high"><img src="<?php echo get_template_directory_uri(); ?>/img/hqdefault.jpg" width="100%" alt="YouTube Video Preview"></div>
+        <div class="video-large pretty-embed" data-pe-videoid="YBYNIAdedW4" data-pe-fitvids="true" data-pe-preview-size="high"><img src="<?php echo get_template_directory_uri(); ?>/img/hqdefault.jpg" width="100%" alt="YouTube Video Preview"></div>
       </div>
       <div class="small-12 large-6 column feedback-content">
         <div class="feedback-text">
