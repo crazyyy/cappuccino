@@ -2,7 +2,7 @@
   <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
     <?php setup_postdata($post); ?>
 
-      <div class="small-6 medium-6 large-4 column end mix <?php $field = get_field_object('style'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v; endforeach; endif; ?> <?php $field = get_field_object('material'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v; endforeach; endif; ?> <?php $field = get_field_object('size'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v; endforeach; endif; ?> <?php $field = get_field_object('color'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v; endforeach; endif; ?> works-example" style="display: inline-block;">
+      <div class="small-6 medium-6 large-4 column end mix <?php $field = get_field_object('style'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v.' '; endforeach; endif; ?> <?php $field = get_field_object('material'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v.' '; endforeach; endif; ?> <?php $field = get_field_object('size'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v.' '; endforeach; endif; ?> <?php $field = get_field_object('color'); $value = $field['value']; if( $value ): foreach( $value as $v ): echo $v.' '; endforeach; endif; ?> works-example" style="display: inline-block;">
 
           <div class="thumb" data-big-image="<?php the_post_thumbnail_url(); ?>">
             <?php the_post_thumbnail('works'); ?>
